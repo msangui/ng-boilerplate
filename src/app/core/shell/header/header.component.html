@@ -1,0 +1,18 @@
+<mat-toolbar class="mat-elevation-z6 navbar" color="primary">
+  <div>
+    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
+      <img class="logo"
+           src="assets/deluxe-logo.png"
+           alt="Deluxe"/>
+    </button>
+  </div>
+  <span fxFlex></span>
+  <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+    <mat-icon>language</mat-icon>
+  </button>
+  <mat-menu #languageMenu="matMenu">
+    <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
+        {{language}}
+      </button>
+  </mat-menu>
+</mat-toolbar>
