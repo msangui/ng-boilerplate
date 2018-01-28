@@ -1,0 +1,13 @@
+<mat-card-content>
+  <mat-card>
+    <mat-card-header>
+      <img *ngIf="quote"
+           mat-card-avatar
+           [src]="quote.icon"/>
+      <mat-card-title>Chuck Norris</mat-card-title>
+      <mat-card-subtitle>
+        {{quote.value}}
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</mat-card-content>

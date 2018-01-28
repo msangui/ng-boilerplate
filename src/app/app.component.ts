@@ -6,8 +6,8 @@ import { merge } from 'rxjs/observable/merge';
 import { filter, map, mergeMap } from 'rxjs/operators';
 
 import { environment } from '../environments/environment';
-import { Logger } from './core/logger.service';
-import { I18nService } from './core/i18n.service';
+import { Logger } from './modules/core/services/logger/logger.service';
+import { I18nService } from './modules/core/services/i18n/i18n.service';
 
 const log = new Logger('App');
 

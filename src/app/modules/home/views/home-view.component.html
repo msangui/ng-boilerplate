@@ -1,0 +1,13 @@
+<div class="container">
+  <mat-card>
+    <p>
+      <img class="logo"
+           src="assets/deluxe-logo.png"
+           alt="Deluxe"/>
+    </p>
+    <app-quote-card *ngIf="!isLoading"
+                    [quote]="quote"></app-quote-card>
+    <app-loader [isLoading]="isLoading"
+                size="2"></app-loader>
+  </mat-card>
+</div>

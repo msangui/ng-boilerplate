@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '../material.module';
-import { LoaderComponent } from './loader/loader.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   imports: [
